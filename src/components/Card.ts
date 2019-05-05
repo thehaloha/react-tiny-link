@@ -178,8 +178,3 @@ export const Card = styled('a')`
     background: rgb(245, 248, 250);
   }
 `;
-
-Card.defaultProps = {
-  rel: 'noopener noreferrer',
-  target: '_blank',
-};
