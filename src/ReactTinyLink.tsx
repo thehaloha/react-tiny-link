@@ -74,6 +74,7 @@ export class  ReactTinyLink extends React.Component<IReactTinyLinkProps, IReactT
           href={this.props.url}
           width={this.props.width}
           isShownGraphic={this.props.showGraphic}
+          target="_system"
         >
           {this.props.showGraphic && (
             <CardMedia
