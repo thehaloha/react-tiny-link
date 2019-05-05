@@ -71,10 +71,10 @@ export class  ReactTinyLink extends React.Component<IReactTinyLinkProps, IReactT
         <Card
           className="react_tinylink_card"
           cardSize={this.props.cardSize}
-          href={this.props.url}
+          href="#"
+          onClick={e => { e.preventDefault(); window.open(this.props.url, '_system'); return false }}
           width={this.props.width}
           isShownGraphic={this.props.showGraphic}
-          target="_system"
         >
           {this.props.showGraphic && (
             <CardMedia
